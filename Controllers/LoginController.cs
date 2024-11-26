@@ -42,6 +42,8 @@ return LocalRedirectResult("~/Login");
 
 } else {
     Console.WriteLine($"Eba voce entrou!");
+    HttpContext.Session.SetString("UsuarioID", usuarioBuscado.UsuarioId.ToString());
+    HttpContext.Session.SetString("Admin", usuarioBuscado.Admin.ToString());
     return LocalRedirectResult("~/Livro");
 }
             return View();

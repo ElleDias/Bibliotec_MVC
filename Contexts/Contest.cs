@@ -21,7 +21,7 @@ namespace Bibliotec.Contexts
     protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder){
 if (!optionsBuilder.IsConfigured)
 
-optionsBuilder.UseSqlServer(@"Data Source=NOTE28-S28\SQLEXPRESS; Initial Catalog = Bibliotec;
+optionsBuilder.UseSqlServer(@"Data Source=NOTE28-S28\SQLEXPRESS; Initial Catalog = Bibliotec_mvc;
  User Id=sa; Password=abc123; Integrated Security=true;
   TrustServerCertificate = true");
     }

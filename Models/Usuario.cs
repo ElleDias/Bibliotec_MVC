@@ -11,10 +11,10 @@ namespace Bibliotec.Models
     {
         [Key]
         public int UsuarioId { get; set; }
-        public string Nome;
-        public string Email;
-        public string Senha;
-        public string Contato;
+        public string? Nome;
+        public string? Email;
+        public string? Senha;
+        public string? Contato;
         public bool Status;
         public bool Admin;
         public DateOnly Dtnacimento;
@@ -22,6 +22,6 @@ namespace Bibliotec.Models
         [ForeignKey("Curso")]
         public int CursoId { get; set; }
 
-        public Curso Curso { get; set; }
+        public Curso? Curso { get; set; }
     }
 }
