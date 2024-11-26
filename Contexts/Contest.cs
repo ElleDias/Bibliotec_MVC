@@ -22,7 +22,7 @@ namespace Bibliotec.Contexts
 if (!optionsBuilder.IsConfigured)
 
 optionsBuilder.UseSqlServer(@"Data Source=NOTE28-S28\SQLEXPRESS; Initial Catalog = Bibliotec_mvc;
- User Id=sa; Password=abc123; Integrated Security=true;
+ User Id=sa; Password=abc123; 
   TrustServerCertificate = true");
     }
     
